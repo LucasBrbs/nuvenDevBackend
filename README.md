@@ -121,8 +121,7 @@ erDiagram
 
 2. **Crie o arquivo `.env`**
    ```bash
-   cp .env.example .env
-   # Edite o .env com as chaves enviadas via email
+   # Crie e popule o .env com as chaves enviadas via email
    ```
 
 3. **Suba a aplicação**
