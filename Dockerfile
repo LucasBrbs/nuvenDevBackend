@@ -7,6 +7,10 @@ RUN npm install
 
 COPY . .
 
+# Gerar o Prisma Client
+RUN npx prisma generate
+
 EXPOSE 3000
 
-CMD ["npm", "start"]
+# Script para executar migrações e iniciar a aplicação
+CMD ["sh", "-c", "npx prisma migrate deploy && npm start"]
